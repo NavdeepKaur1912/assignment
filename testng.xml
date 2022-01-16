@@ -29,7 +29,7 @@
 		<parameter name="browser_version" value="latest"/>
 
 		<classes>
-			<class name="com.learnautomation.testcases.LoginTestWithPOMWithFactory"/>
+			<class name="com.learnautomation.testcases.EmployeePageTest"/>
 		</classes>
 	</test> 
 	

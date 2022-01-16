@@ -10,6 +10,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Helper {
@@ -61,6 +62,10 @@ public class Helper {
 		return dateformat.format(new Date());
 	}
 	
-	
+	public static void clickDropDown(WebDriver driver, By ele,String value )
+	{
+		Select optnSlct = new Select(driver.findElement(ele));
+		optnSlct.selectByValue(value);
+	}
 	
 }

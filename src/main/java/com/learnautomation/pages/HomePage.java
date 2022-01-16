@@ -17,6 +17,9 @@ public class HomePage
 	By adminTab=By.xpath("//b[text()='Admin']");
 	By welcomeTab=By.xpath("//a[@id='welcome']");
 	By logout=By.xpath("//a[text()='Logout']");
+	By linkPIM= By.xpath("//b[text()='PIM']");
+	By addEmp= By.xpath("//a[(contains(@href,'addEmployee'))]");
+	
 	
 	public LoginPage logOutFromApplication()
 	{
@@ -39,5 +42,11 @@ public class HomePage
 		return new AdminPage(driver);
 	}
 	
-	
+	public EmployeePage clickOnAddEmp()
+	{
+		driver.findElement(linkPIM).click();
+		driver.findElement(addEmp).click();
+		return new EmployeePage(driver);
+		
+	}
 }

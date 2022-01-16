@@ -21,13 +21,13 @@ public class CustomDataProvider {
 	public static Object[][] getUserData()
 	{
 		return ExcelUtility.getDataFromSheet("login");
-	}
+	}*/
 
 	
-	@DataProvider(name="Emp")
+	@DataProvider(name="employee")
 	public static Object[][] getEmpData()
 	{
-		return ExcelUtility.getDataFromSheet("login");
+		return ExcelUtility.getDataFromSheet("employee");
 	}
-	*/
+	
 }
